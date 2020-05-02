@@ -1,12 +1,5 @@
-module.exports = function(options, files) {
-    if(options && files) {
-        console.log('you may proceed with ')
-        console.log(options)
-        console.log('===================================')
-        console.log(files)
-    }
-    else {
-        console.log('error: to build a theme you need to pass {options} and [filepaths]')
-        process.exit()
-    }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+
+ReactDOM.render(<App />, document.getElementById('root'));
