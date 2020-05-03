@@ -4,9 +4,39 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "dev": "npx webpack-dev-server --mode development",
+    "build": "npx webpack --mode development",
+    "test": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@toolio/docs": "^0.1.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "react-hot-loader": "^4.12.21",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaayperez/toolio-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaayperez/toolio-theme/issues"
+  }
 }
